@@ -1,0 +1,1181 @@
+
+/*Here, Background color and a universal font for the WEBPAGE is set*/
+html
+{
+	background-color: #0c1027;
+  font-family:  sans-serif;
+  color: white;
+}
+
+/*TO REMOVE UNDERLINE FROM ALL HYPERLINKS THAT PLAY THE SONG*/
+html a:link
+{
+  text-decoration: none;
+}
+
+/* To keep the color as white even though HYPERLINK HAS BEEN ADDED*/
+html a
+{
+  color: white;
+
+}
+
+/*Positioning of the Main Section*/
+main
+{
+  top:10%;
+  display: inline-block;
+  width: 70%;
+}
+
+/*Positioning of the Aside Section*/
+aside
+{
+  top: 10%;
+  display: inline-block;
+  width: 24%;
+  vertical-align: top;
+  margin:20px 0px 20px 20px;
+  height: 35rem;
+  position:sticky;
+  overflow-y: scroll;
+  scrollbar-width: none; /*firefox*/
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+::-webkit-scrollbar { 
+    display: none; /* Chrome Safari */
+    scrollbar-width: none; /*firefox*/
+    -ms-overflow-style: none; /* IE 10+ */
+}
+
+
+
+/* A universal class to fix the position of any element of my choosing*/
+  .fixed
+  {
+    position: fixed;
+  }
+
+/* Some Global Variables mainly using for Calculations Related to Carousel */
+
+
+/*Cursor Pointer Class*/
+/*Used for changing Cursor on Various Artist Names and */
+.pointer
+{
+  cursor: pointer;
+}
+
+/*Class for setting up the website Logo*/
+.iconimg
+{
+	border-radius: 100%
+ 	height:80px;
+ 	width:80px;
+ 	margin-left: 50px;
+ 	margin-top: 20px;
+ 	/*color: red;*/
+}
+
+
+.border{
+    border-radius: 50%;
+    border: 3px solid;
+    box-shadow: 1px 1px 10px 2px lightgrey;
+}
+
+.border_square_red{
+    border: 1px solid;
+    border-color: red;
+    box-shadow: 1px 1px 10px 2px red;
+}
+
+.border_square_gold{
+    border: 1px solid;
+    border-color: gold;
+    box-shadow: 1px 1px 10px 2px gold;
+
+}
+
+.border_circle_blue{
+    border: 1px solid;
+    border-radius: 50%;
+    border-color: skyblue;
+    box-shadow: 1px 1px 10px 2px skyblue;
+}
+
+
+
+/*Setting the font color to white*/
+/*header span,p
+{
+	color:white;
+}*/
+/*Setting all divs inside Header to work as Inline Block*/
+header div
+{
+	display: inline-block;
+
+}
+
+#studiotext
+{
+    transform: translateY(-20px);
+    font-size: 25px;
+    margin-left: 5px;
+    font-family: sans-serif;
+}
+#Favourite
+{
+    transform: translateY(-20px);
+    font-size: 25px;
+    margin-left: 10rem;
+    font-family: sans-serif;
+}
+
+
+/*SEARCH BAR*/
+
+/*Search Bar Positioning */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+  
+/*Defining the Default term inside Search Bar*/
+.searchTerm {
+    background-color: #12193e;
+    width: 100%;
+    border: 3px solid #12193e;
+    border-right: none;
+    padding: 5px;
+    height: 15px;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+/*Default search term on FOCUS*/
+.searchTerm:focus{
+  color: #ffff;
+}
+
+/*Styling and Positioning the search button*/
+.searchButton {
+    position: absolute;
+    width: 32px;
+    height: 31px;
+    border: 1px solid #12193e;
+    background: #12193e;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    font-size: 13px;
+    transform: translateX(-24px);
+
+}
+
+/*Styling and Positioning the voice-search button*/
+.micButton {
+
+    width: 37px;
+    height: 31px;
+    border: 1px solid #12193e;
+    background: #12193e;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    font-size: 13px;
+
+
+}
+
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 25%;
+  position: absolute;
+  top: 6.9%;
+  left: 60%;
+
+}
+
+/*Styling and positioning the Notification Button*/
+.noti
+{
+	position: absolute;
+	width: 37px;
+  height: 31px;
+  border: 1px solid #0c1027;
+	font-size: 14px;
+	background: #0c1027;
+	color:white;
+	cursor: pointer;
+	top:6.9%;
+	left:87%;
+}
+
+/*Position and Styling the Creator's Display Pic*/
+.dp
+{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top:5.9%;
+	left: 91.5%;
+}
+
+
+
+/*DROPDOWN MENU, Responsivity*/
+
+.bars
+{
+    color: white;
+    position: absolute;
+    top: 5.9%;
+    left: 87.5%;
+    display: none;
+    font-size: 1.4rem;
+    padding-left: 36px;
+}
+
+.dropdown-list
+{
+    margin: 0;
+    display: none;
+    background-color:#12193e;
+    box-shadow: 0px 4px 8px 1px #12193e80;
+}
+
+
+.dropdown-list ul
+{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list
+{
+    display: block;
+    position: absolute;
+    right: 5.9%;
+    top:9.9%;
+}
+
+.dropdown-list li
+{
+  margin: 0.4rem 0px;
+}
+
+.nav-menu li a 
+{
+    transition: color 0.5s, border-bottom 4s;
+}
+
+.nav-menu li a:hover 
+{
+    color: #999997;
+    border-bottom: 1px solid black;
+}
+.no-list-style
+{
+    list-style: none;
+}
+
+.no-list-style li 
+{
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+
+.horizontal-list 
+{
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li 
+{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+
+/*CAROUSEL*/
+
+/* Carousel Container */
+.carousel 
+{
+    /*box-sizing: border-box;*/
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+     
+}
+
+/* Carousel Row */
+.carousel-row {
+      white-space: nowrap;   /*check*/
+      margin-top: 43px;
+      margin-bottom: 43px;
+      margin-left: 62.5px;
+      margin-right: 62.5px;
+      transition: 0.5s;
+}
+
+/* Content Tile */
+.carousel-tile {
+      position: relative;
+      display: inline-block;
+      width: 250px;
+      height: 172px;
+      margin-right: 10px;
+      transition: 0.5s;
+      /*-webkit-transform-origin: center left;*/
+      transform-origin: center left;
+      cursor: pointer;
+      cursor: hand;
+}
+
+/* Add Extra Margin to Last Carousel Tile */
+.carousel-tile:last-of-type {
+      margin-right: 125px;
+}
+
+/* Ensure All Elements Inside Tile are Block */
+.carousel-tile * {
+      display: block;
+}
+
+/* Tile Image Dimensions */
+.tile__img
+{
+  width: 250px;
+  height: 140.5px;
+  object-fit: cover;
+}
+
+
+.carousel-row:hover {
+      transform: translate3d(-62.5px, 0, 0);
+}
+
+
+.carousel-row:hover .carousel-tile {
+      opacity: 0.25;
+}
+
+
+.carousel-row:hover .carousel-tile:hover {
+      /*-webkit-transform: scale(1.5);*/
+      transform: scale(1.5);
+      opacity: 1;
+}
+
+/* Content Tile on Hover */
+.carousel-tile:hover ~ .carousel-tile {   /*~ is use for sibling*/
+     
+      transform: translate3d(125px, 0, 0);
+}
+
+/* LATEST RELEASE SECTIONS*/
+
+/*A universal class used to set margin and color to various headings that have been used in WEBPAGE*/
+.headings
+{
+  color: white;
+  margin-left: 40px;
+
+}
+
+/*Container for all the items*/
+.latest-release-container
+{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+/* Styling all the images in the CONTAINER*/
+.latest-release-container img
+{
+  height: 80px;
+  width: 80px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+/*Adding HOVER effects on all the images in the CONTAINER*/
+.latest-release-container img:hover
+{
+
+  opacity: 0.7;
+
+
+}
+
+
+
+/*Defining single FLEX based Item inside the container*/
+
+.flex-item
+{
+    height: 100px;
+    width: 300px;
+    margin: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.flex-item1
+{
+    height: 80px;
+    width: 250px;
+    margin: 10px 10px 10px 20px;
+    padding: 10px 10px 10px 10px;
+
+}
+
+/* Postioning the Info about the Song*/
+.info-container
+{
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+/* Styling all the P tages insided Info Container*/
+.info-container p
+{
+  padding: 0;
+  margin-left: 5px;
+  text-align: justify;
+  line-height: 10px;
+}
+
+.dots
+{
+    margin-left: 17rem;
+    position: absolute;
+    cursor: pointer;
+    text-align: right;
+    
+}
+
+.dot
+{
+    margin-left: -1.5rem;
+    position: absolute;
+    text-align: left;
+    width: 8rem;
+    border-radius: 10%;
+    list-style: none;
+    display: none;
+    padding: 0px 0rem;
+    margin-top: 0.5px;
+}
+
+.dots:hover .dot{
+  display:block;
+  color:red;
+  position: absolute;
+  background-color:#0c1027; 
+}
+
+
+/* A universal class to set the text color to grey and font size to 12px used inside the WEBPAGE*/
+.text-grey-12
+{
+  font-size: 12px;
+  color: #999997;
+}
+/* Styling all the span tages insided Info Container*/
+
+.info-container span
+{
+    margin-left: 166px;
+    font-size: 11px;
+    color: #999997;
+}
+
+
+/*POPULAR ARTISTS*/
+
+/*Container for all the items*/
+.popular-artist-container
+{
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Styling all the images in the CONTAINER*/
+.popular-artist-img
+{
+    display: block;
+    margin: 10px 10px -11px 10px;
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+}
+
+/* Styling all the P tages inside Artist Container*/
+.popular-artist-container p 
+{
+  text-align: center;
+}
+
+/* This is a special overlay PLAY BUTTON ICON over each image of popular Artist*/
+
+/* Size is equal to the size of IMAGE INSIDE CONTAINER*/
+.icon {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    transform: translate(9px, -120px);
+    padding: 46px 46px 46px 46px;
+    background-color: rgba(12,16,39,0.5);
+    opacity: 0;
+    border-radius: 50%;
+    transition: .5s ease-in-out;
+}
+
+/* Hover effects on the overlay of play button over each Popular Artist Image*/
+
+.icon:hover
+{
+  opacity: 1;
+
+}
+
+
+
+/*MUSIC STATIONS*/
+/*Defining a Container for all the Flexed Items*/
+.music-stations-container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin:40px 40px 20px 40px;
+}
+
+/*Styling the Radio Icon symbolising the Section of Music Stations*/
+.main-icon img
+{
+  height: 120px;
+  width: 120px;
+  margin: 20px 20px 20px 20px;
+}
+
+/*Styling all the Stations Icon Images which direct to different types of mixes*/
+
+.station-img
+{
+  height: 100px;
+  width: 100px;
+  margin: 22px 10px 10px 10px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+/*Styling the Name of each Station*/
+
+.station-name
+{
+  text-align: center;
+  text-shadow: 2px 2px black;
+  position: absolute;
+  transform: translate(50px,55px);
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  z-index: 9;
+}
+
+/*Adding hover effect of GROWTH to the images of each station*/
+
+.station-img:hover
+{
+	transform: scale(1.1);
+}
+
+
+/*TYPES OF MUSIC SECTION*/
+
+/*Defining a Container for all the Flexed Items*/
+.types-container
+{
+  margin: 10px 10px 33px 20px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*Styling all the images inside the container*/
+.types-container img
+{
+  margin: 10px 10px 10px 10px;
+  height: 175px;
+  width: 300px;
+  cursor: pointer;
+  transition: transform 1s, filter 0.75s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+/*Postioning the items relative to the Container*/
+.types-items
+{
+  position: relative;
+}
+
+/*Styling all the p tags inside each flexed item*/
+.types-items p
+{
+  font-size: 20px;
+  text-align: center;
+  z-index: 999;
+  position: absolute;
+  top: 62%;
+  width: 100%;
+}
+
+/*Adding hover effects on each image insdie the Container to ENLARGE AND BRIGHTEN the images*/
+.types-container img:hover
+{
+  filter: brightness(100%);
+  transform: scale(1.2);
+}
+
+
+/*LATEST ENGLISH-LATEST HINDI SECTIONS*/
+/*Hindi and English Sections*/
+
+/*Defining a Container for all the Flexed Items*/
+.latest-container
+
+{
+  padding: 0 0 0 20px;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/*Styling all the p tags inside the container*/
+.latest-container p 
+{
+  text-align: left;
+  line-height: 6px;
+  margin-left: 10px;
+}
+
+/*Styling all the images inside the container*/
+.latest-container img
+{
+
+  margin: 10px 10px -5px 10px;
+  height: 130px;
+  width: 130px;
+  cursor: pointer;
+  border-radius: 15%;
+  transition: .5s ease-in-out;
+
+}
+
+/*Adding a little fade effect on Hover over the images of albums*/
+.latest-container img:hover
+{
+  opacity: 0.7;
+
+}
+
+
+.latest-item
+{
+  padding: 10px 10px 10px 
+  margin:10px 10px 10px 10px;
+}
+
+
+
+/* ASIDE SECTION */
+
+/*Aside queue of Recently Played Songs used both on Home Page and Ed Sheeran's Page*/
+
+/*Making all the Divs inside queue to be Inline Block*/
+.queue-container div
+{
+  display: inline-block;
+}
+
+/*Class used for Defining heading for various sections in Aside Bar*/
+.aside-headings
+{
+  color:white;
+  display: inline-block;
+}
+
+/*Dropdown for queue*/
+
+.Qdropdown{
+  position: relative;   
+  margin-left: 7rem;
+  color: skyblue;
+  font-size: 1rem;
+}
+
+/*Queue Arrow for dropdown*/
+
+.arrow
+{
+    /*margin-left: 17rem;*/
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    text-align: right;
+
+
+    
+}
+.arrow i{
+  color:skyblue;
+}
+
+.arrow_list
+{
+    margin-left: -1.5rem;
+    height: 50px;
+    width: 70px;
+    background-image: linear-gradient(50deg, red 0%, orange 74%) ;
+    z-index: 100;
+    position: absolute;
+    text-align: center;
+    border-radius: 20%; 
+    border: 1px solid white;
+    box-shadow: 1px 1px 10px 2px white;
+    list-style: none;
+    display: none;
+    padding: 0px 0rem;
+    margin-top: 0.5px;
+}
+
+.arrow_list li:first-child{
+  padding-top: 8px;
+}
+
+.arrow:hover .arrow_list{
+  display:block;
+  color:yellow;
+  position: absolute;
+
+}
+
+/*Styling of the Song Container for Aside Bar*/
+.song-container 
+{
+    display: flex;
+    margin: 10px 10px -7px 15px;
+    padding: 6px 6px 6px 6px;
+    width: 85%;
+    position: relative;
+    transition: all 0.5s ease-in-out;
+ }
+
+ /*Styling images inside Song Container*/
+
+.song-container img 
+{
+    width: 50px;
+    height: 50px;
+    margin: 16px 14px 13px 32px;
+}
+
+/*Styling Spans inside Song Container*/
+.song-container span
+{
+    vertical-align: top;
+    position: absolute;
+    margin-top: 33px;
+}
+.song-container:hover {
+  transform: scale(1.1);
+
+}
+
+/*A class created to Adjust the various Font Awesome and FriIconix Icons added to the Queue*/
+.adjust
+{
+	position: absolute;
+	right: 10%;
+	top:40%;
+}
+
+/*Styling the SIMILAR ARTISTS section on Ed Sheeran Page of Aside Section*/
+/*Majority of styling is Borrowed from the LATEST RELEASE SECTION OF THE HOME PAGE */
+.latest-release-container-aside
+{
+  padding: 0 0 0 0;
+  /*height: 20px;*/
+  margin-left: -19px;
+}
+
+/*Styling the Favourites Icon */
+.fi-xnsuxl-heart-solid
+{
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+/*Changing the color of Favourites Icon to RED ON HOVER*/
+.fi-xnsuxl-heart-solid:hover
+{
+  color: red;
+
+}
+
+
+/*STYLINGS SPECIFICALLY USED ON THE DEDICATED PAGE TO ED SHEERAN*/
+
+/*ED SHEERAN*/
+
+/*Container for Storing Details about Ed Sheeran*/
+
+.ed-container
+{
+  margin: 40px 20px 20px 20px;
+  background-color: #141b41;
+  display: flex;
+}
+
+/*Styling the Image of Ed Sheeran*/
+.ed-container img
+{
+  height: 300px;
+  width: 400px;
+  margin: 10px 10px 10px 10px;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+/*Styling the Info related to Ed Sheeran*/
+.ed-info
+{
+  display: inline-block;
+  vertical-align: top;
+}
+
+/*Styling p tags used in Ed Sheeran's Info*/
+.ed-info p
+{
+	  margin-right: 10px;
+    margin-left: 40px;
+    text-align: left;
+    line-height: 15px;
+}
+
+/*Creating a Container used to store various songs by Ed Sheeran*/
+.ed-song-container
+{
+  background-color: #1a1e33; 
+  display: flex;
+  margin: 20px 20px 20px 20px;
+  padding: 6px 6px 6px 6px;
+  width: 95%;
+  border-radius: 7px;
+  position: relative;
+}
+
+/*Styling the images of Albums the Ed Sheeran songs belong to*/
+
+.ed-song-container img
+{
+  width: 50px;
+  height: 50px;
+  margin: 0px 10px -4px 45px;
+}
+
+/*Centering the TEXT INSIDE THE SINGLE PLAYLIST QUEUE*/
+
+.ed-song-container span
+{
+	margin: 15px 10px 10px 10px;
+  position: absolute;
+  vertical-align: top;
+}
+
+
+
+/*Stlying the Add to List Icon inside the Ed Sheeran Song Container*/
+.fi-xwsuxl-plus-solid
+{
+	  font-size: 20px;
+	  position: absolute;
+    right: 5%;
+    top: 29%;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/*Adding hover effect of changing color to the Add to List icon*/
+.fi-xwsuxl-plus-solid:hover
+{
+	color: grey;
+}
+
+/*A class used to adjust the icons of Favourites and Add to List*/
+.ed-adjust
+{
+	  position: absolute;
+    right: 12%;
+    top: 32%;
+}
+
+
+
+
+/*BOX SHADOWS FOR ALBUM COVERS used to add glow effect to various album covers on Home Page's aside section and Ed Sheeran's Aside Section*/
+
+/*Green Glow for green dominant album covers*/
+.bx-green
+{
+	box-shadow: 0px 0px 7px 1px #14cf5785;
+}
+/*Light Blue Glow for green dominant album covers*/
+.bx-lb
+{
+  box-shadow: 0px 0px 7px 1px #b2bdd07a;
+}
+/*Violet Glow for green dominant album covers*/
+.bx-violet
+{
+  box-shadow: 0px 0px 7px 1px #60417d85;
+}
+/*White Glow for green dominant album covers*/
+.bx-white
+{
+  box-shadow: 0px 0px 7px 1px #f5f5f585;
+}
+/*Orange Glow for orange dominant album covers*/
+.bx-orange
+{
+	box-shadow: 0px 0px 7px 1px #d85a1d85;
+}
+/*Blue Glow for blue dominant album covers*/
+.bx-blue
+{
+	box-shadow: 0px 0px 7px 1px #56bfdf7d;
+}
+/*Pink Glow for pink dominant album covers*/
+.bx-pink
+{
+	box-shadow: 0px 0px 7px 1px #feb0d67a;
+}
+
+
+/*Creating and Styling a VERY FANCY BUTTON ON THE ED SHEERAN PAGE*/
+.btn {
+  position: relative;
+  color: white;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.3s;
+  margin-left: 40px;
+  text-align: center;
+  display: inline-block;
+
+}
+
+
+/*BUTTON STYLING*/
+
+.inline
+{
+	display: inline-block;
+}
+
+
+.btn span
+{
+	transition: all 0.3s;
+	transform: scale(1, 1);
+}
+
+.btn::before, .btn::after {
+  content: "";
+  position: absolute;
+  transition: all 0.3s;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*z-index: 1;*/
+}
+
+.btn-six::before {
+  opacity: 0;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(1.3, 1.3);
+}
+
+.btn-six:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-six::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.btn-six:hover::after {
+  transform: scale(0, 0);
+  opacity: 0;
+}
+
+
+
+
+/*AUDIO PLAYER used on Both the Pages, Called upon by clicking the Images of the Songs */
+
+/*Styling the Audio Container*/
+
+.audio-container
+{
+	position: fixed;
+	width: 66%;
+	border-radius: 20px;
+	margin: auto;
+	text-align: center;
+	background-color: #f1f3f4;
+	margin-top: 40px;
+	top: 85%;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition:0.5s ease-in-out;
+}
+
+/*Adding Pop-up sort of effect to the Music Player*/
+#show:target
+{
+	visibility: visible;
+	opacity: 0.8;
+}
+
+/*Defining the Width of Music Player*/
+.audio-container audio
+{
+	width: 100%;
+}
+
+
+
+/*Adding RESPONSIVITY to the Page*/
+
+/*After squeezing the page to 846px, Search Bar,Notification Menu and Creator Pic gets converted into a Drop Menu*/
+@media only screen and (max-width: 864px) 
+{
+    
+    .bars 
+    {
+        display: block;
+    }
+
+    .wrap
+    {
+      display: none;
+    }
+    .Notifications
+    {
+      display: none;
+    }
+    .my-pic
+    {
+      display: none;
+    }
+    #Favourite{
+      display:none;
+    }
+}
+
+
+
+/*The Heart icon from Recently Played disappears after sqeezing the width to 1240px*/
+@media screen and (max-width: 1240px)
+{
+  .adjust
+  {
+    visibility: hidden;
+  }
+}
+
+/*Martin Garrix's Images shrinks smoothly with help of Transition Effects after squeezing the width to 1066px*/
+@media screen and (max-width: 1066px)
+{
+  .ed-container img
+  {
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+}
+
+/*The Info about Martin Garrix no longer remains inline after squeezing the screen to 806px*/
+@media screen and (max-width: 806px)
+{
+  .ed-info
+  {
+    display: block;
+    vertical-align: top;
+  }
+  .ed-container
+  {
+    margin: 40px 20px 20px 20px;
+    background-color: #141b41;
+    display: block;
+  }
+  /*As Soon as Info Goes below the image, there is now space for image to Grow back a little again, and then shrink according to the squeezing of screen, acheived using percentage*/
+  /*Also the Margin adjusts itself to take the Image to the middle, using margin property*/
+  .ed-container img
+  {
+    width: 80%;
+    height: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+}
+/*Martin Garrix's Images shrinks smoothly with help of Transition Effects after squeezing the width to 520px, Final Width*/
+@media screen and (max-width: 520px)
+{
+  .ed-container img
+  {
+    height: 200px;
+    width: 200px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+  }
+}
+
+
